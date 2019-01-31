@@ -8,7 +8,6 @@ class FoodList {
     var list = json['fnblist'] as List;
     print(list);
     List<FABList> fNBList = list.map((i) => FABList.fromJson(i)).toList();
-
     return FoodList(tabName: json["TabName"], fNBList: fNBList);
   }
 }
